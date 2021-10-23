@@ -1,0 +1,295 @@
+/* CSS CODE FOR MAIN (BESTMOVIES), DETAILS, AND ABOUT */
+/* Last Update: 24/10/2021 */
+
+body, html {
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(./fonts/coolvetica-rg.ttf);
+}
+
+@font-face {
+    font-family: MerriweatherSans;
+    src: url(./fonts/MerriweatherSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cinzel;
+    src: url(./fonts/Cinzel-Bold.ttf);
+}
+
+@font-face {
+    font-family: Rancho;
+    src: url(./fonts/Rancho-Regular.ttf);
+}
+
+.header {
+    background-color: #ffffff;
+    background: #ffffff;
+    padding: 1em;
+    margin-bottom: 3.35em;
+    color: #42240C;
+}
+
+.header a {
+    float: left;
+    color: #42240C;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1em;
+    border-radius: 1em;
+}
+
+.header .left-header {
+    font-family: Poppins;
+    font-size: 0.8em;
+    font-weight: bold;
+    float: left;
+    margin: 1em;
+    vertical-align: middle;
+}
+
+.header .left-header .icon-text {
+    font-family: Helvetica, sans-serif;
+    margin: 1em;
+    color: #42240C;
+}
+
+.header a:hover {
+    background-color: #FDBA9A;
+    color: #C81912;
+}
+    
+.header .right-header {
+    float: right;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .right-header {
+        float: none;
+        display: block;
+        margin-right: 1em;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    filter: drop-shadow(0 0.3em 0.1em #595959);
+    z-index: 1000;
+}
+
+.sticky .right-header {
+    padding-right: 2em;
+}
+
+.head-line {
+    background-image: url("./images/home_bg_trans.png");
+    
+    min-height: 100%;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head-line-details {
+    background-image: url("./images/details_bg.png");
+    min-height: 100%;
+    padding: 1em 7em 5em 7em;
+    color: darkred;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .title-part {
+        background-attachment: scroll;
+    }
+}
+
+.big-headline {
+    padding-top: 2em;
+    padding-left: 2em;
+    font-size: 2em;
+    font-family: Coolvetica, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: darkred;
+    line-height: 0.8em;
+    letter-spacing: 0.3em;
+}
+
+.big-headline-details {
+    font-size: 4em;
+    font-family: Cinzel, serif;
+    font-style: normal;
+    color: darkred;
+    text-align: center;
+}
+
+.small-headline {
+    color: black;
+    font-size: large;
+    font-family: Helvetica;
+    padding-left: 3em;
+}
+
+.small-headline .link {
+    color: #C81912;
+    font-style: italic;
+}
+
+.small-headline .link:hover {
+    color: #F64B3C;
+}
+
+.scroll-button .button {
+    background-color: #F64B3C;
+    border: white;
+    color: #FDBA9A;
+    padding: 0.2em;
+    text-align: center;
+    text-decoration: #FDBA9A;
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 2.2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+}
+
+.scroll-button .button:hover {
+    background-color: #C81912;
+}
+
+.scroll-button .text-scroll {
+    font-family: Coolvetica;
+    font-size: large;
+    font-weight: 200;
+    margin-left: 1em;
+    color: black;
+}
+
+.scroll-button .text-scroll:hover {
+    color: #42240C;
+}
+
+.main-part {
+    color: darkred;
+    margin: 3em 10em;
+    font-family: MerriweatherSans;
+    min-height: 100%;
+}
+
+.search-bar {
+    float: right;
+}
+  
+input[type=text] {
+    padding: 0.6em;
+    font-size: 1em;
+    width: 20em;
+}
+
+.search-bar button {
+    float: right;
+    padding: 0.6em 1em;
+    margin-right: 1.6em;
+    background: #FDBA9A;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #F64B3C;
+}
+
+th {
+    background-color:#C81912; 
+    color: white;
+}
+
+th,td {
+    padding: 1em;
+    width: 100%;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffe9de;
+}
+
+tr:hover {
+    background-color: #FDBA9A;
+}
+
+table {
+    text-decoration: none;
+    color: darkred;
+}
+
+.movie-poster {
+    align-content: center;
+    padding-top: 2em;
+}
+
+.movie-datas {
+    font-family: Poppins;
+    font-size: 1em;
+}
+
+img {
+    border-radius: 10%;
+    filter: drop-shadow(0.7em 0.7em 0.2em #333);
+}
+
+footer {
+    background-color: #F64B3C;
+    text-align: center;
+    padding: 0.5em;
+    font-family: Rancho;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.about-main {
+    background-image: url("./images/details_bg.png");
+    min-height: 100%;
+    padding: 3em;
+    color: darkred;
+    background-size: cover;
+}
+
+.about-title {
+    font-family: Poppins;
+    font-size: 3em;
+}
+
+.about-content {
+    font-family: MerriweatherSans;
+    font-size: large;
+}

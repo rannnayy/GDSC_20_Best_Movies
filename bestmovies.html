@@ -1,0 +1,64 @@
+<!-- HTML CODE FOR MAIN PAGE (BESTMOVIES) -->
+<!-- Last Update : 24/10/2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Best Movies</title>
+    <link rel="stylesheet" href="./bestmoviesstyle.css"/>
+    <link rel="icon" type="image/png" href="./images/film_icon_2.png" sizes="16x16" />
+    <script src="https://kit.fontawesome.com/659c30ea57.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body onload="JSONToHTMLTable(jsonData, 'show-table');">
+    <div class="header" id="stick-header">
+        <div class="left-header">
+            <i class="fas fa-film fa-2x"><span class="icon-text" style="font-family: Poppins;">FilManiac</span></i>
+        </div>
+        <div class="right-header">
+            <a href="./bestmovies.html"><b>Home</b></a>
+            <a href="./about.html"><b>About</b></a>
+            <a href="https://github.com/rannnayy"><b>Contact Me!</b></a>
+        </div>
+    </div>
+    <div class="head-line" id="line-head">
+        <div class="big-headline">
+            <h1>20</h1>
+            <h1>BEST</h1>
+            <h1>MOVIES</h1>
+        </div>
+        <div class="small-headline">
+            <h3>20 Best Movies according to <a href="https://www.imdb.com/chart/top/" class="link">IMDb</a></h3>
+        </div>
+        <div class="scroll-button">
+            <a href="#main-part" style="text-decoration: none;">
+                <button class="button" type="button"> ↓ </button>
+                <span class="text-scroll">Scroll for details</span>
+            </a>
+        </div>
+    </div>
+    <div class="main-part" id="part-main">
+        <a name="main-part"></a>
+        <div class="main-title">
+            <h2>20 BEST MOVIES OF ALL TIME</h2>
+            <h4>Source: IMDb (via: https://github.com/FEND16/movie-json-data)</h4>
+        </div>
+        <div class="search-bar">
+            <form id="bar-search">
+                <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Search..." name="search" title="Type a Movie Title!">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <br><br><br>
+        <div id="show-table"></div>
+    </div>
+    <br><br>
+    <footer>
+        <i class="fab fa-github"><span><a href="https://github.com/rannnayy" style="text-decoration: none; color: #42240C;">Maharani Ayu Putri Irawan, 2021</a></span></i>
+    </footer>
+    <script src="./bestmoviesjs.js"></script>
+</body>
+</html>
