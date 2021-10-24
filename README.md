@@ -2,6 +2,9 @@
 <h4><i>Maharani Ayu Putri Irawan, 2021</i><h4>
 
 <br>
+    <h4>Deployed on <a href="https://rannnayy.netlify.app/index.html">Netlify</a></h4>
+    
+<br>
 <h2>Screenshots</h2>
 <hr>
 <ol>
